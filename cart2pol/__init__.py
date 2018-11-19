@@ -1,1 +1,1 @@
-from cart2pol import PolarRebin
+from .cart2pol import PolarRebin

@@ -1,2 +1,2 @@
 # cart2pol
-Image rebinning between cartesian to polar coordinates.
+Image rebinning between cartesian and polar coordinates.

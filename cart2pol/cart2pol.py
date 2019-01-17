@@ -19,8 +19,11 @@ class PolarRebin:
 	
 	Rebinning:
 	>>> cartesian_quadrant = resizeFolded( foldQuadrant( cartesian_data, x0, y0), PR.cbins)
-	>>> polar_quadrant = PR.rebin(cartesian_quadrant)
-	>>> polar_data = PR.rebin(cartesian_data, x0, y0)
+	>>> polar_quadrant = PR.cart2pol(cartesian_quadrant)
+	>>> polar_data = PR.cart2pol(cartesian_data, x0, y0)
+	>>>
+	>>> cartesian_quadrant = PR.pol2cart(polar_quadrant)
+	>>> cartesian_data = PR.pol2cart(polar_data)
 	"""
 
 	def __init__(self, cbins=None, rbins=None, thbins=None, file=None):

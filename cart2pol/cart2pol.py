@@ -3,7 +3,7 @@ from math import pi, cos, sin, atan2, ceil
 from numpy import sin as npsin, cos as npcos, \
 				  minimum, maximum, ravel_multi_index, \
 				  arange, empty, zeros, \
-				  hstack, fliplr
+				  hstack, fliplr, rot90
 from scipy.integrate import quad
 from scipy.sparse import csr_matrix
 from quadrant import foldQuadrant, resizeFolded
